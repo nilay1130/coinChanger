@@ -33,7 +33,7 @@ public class CoinChangerController {
 	@ApiOperation(value = "Calculate count of ways to make a change")
 	public ResponseEntity<CoinChangeResponse>  getResult(@PathVariable("amount") int amount){
 		
-		List<Integer> coins = Arrays.asList(2,3,5,10);
+		List<Integer> coins = Arrays.asList(1,5,10,25);
 		String result=changerService.getResult(amount,coins);
 		CoinChangeResponse res=new CoinChangeResponse();
 		res.setCount(result);
