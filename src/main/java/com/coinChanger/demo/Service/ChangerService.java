@@ -1,9 +1,9 @@
 package com.coinChanger.demo.Service;
 
-import com.coinChanger.demo.Model.Coin;
+import java.util.List;
 
 public interface ChangerService {
 	
-	public String getResult(Double amount);
+	public String getResult(int amount,List<Integer> list);
 
 }
